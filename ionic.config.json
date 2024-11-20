@@ -1,0 +1,7 @@
+{
+  "name": "data06",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

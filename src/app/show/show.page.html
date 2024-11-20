@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>แสดงรายการข้อมูลทั้งหมด</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-item *ngFor="let show of member">
+    <ion-avatar>
+      <img src="assets/7342052.jpg" alt="">
+    </ion-avatar>
+   <ion-label>{{show.id_stu}} {{show.name}}</ion-label>
+   <ion-button slot="end" color="primary" (click)="edit(show)">แก้ไข</ion-button>
+   <ion-button slot="end" color="danger" (click)="delmem(show.id)">ลบ</ion-button>
+
+  </ion-item>
+
+</ion-content>
